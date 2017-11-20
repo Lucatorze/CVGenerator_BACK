@@ -1,0 +1,19 @@
+{
+  "name": "cvgenerator_back",
+  "version": "0.0.1",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lucatorze/CVGenerator_BACK.git"
+  },
+  "author": "Lucas ROBERTS & Clémentine FERREOL",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lucatorze/CVGenerator_BACK/issues"
+  },
+  "homepage": "https://github.com/Lucatorze/CVGenerator_BACK#readme"
+}
