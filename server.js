@@ -17,7 +17,7 @@ const cv = require('./Controllers/CVController');
 
 /*
 Routing
-*/ 
+*/
 
 app.get('/', cv.list);
 app.post('/cv/create', cv.create);
@@ -29,7 +29,7 @@ app.delete('/cv/:id', cv.delete);
  Config
 */
 
-app.set('ip', '192.168.0.47');
+app.set('ip', 'localhost');
 app.set('port', 3002);
 
 mongoose.Promise = global.Promise;
@@ -46,6 +46,3 @@ mongoose
     .then( appListen(app, app.get('port'), app.get('ip')) )
     .then( () => console.log(` App Started on http://${app.get('ip')}:${app.get('port')} `.trap.bgGreen) )
     .catch(err => console.log(err.message.red));
-
-
-
