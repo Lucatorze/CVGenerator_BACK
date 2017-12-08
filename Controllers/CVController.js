@@ -28,7 +28,6 @@ module.exports = {
                 res.status(200).json(cvMap);
             })
             .catch(err => {
-                console.log(err.message)
                 return res.status(500).json({error:1,message:err.message})
             });
     },
@@ -50,7 +49,6 @@ module.exports = {
         Cv.create(req.body)
             .then(cv => res.json({success:1, message: 'C.V créé', inserted: cv}))
             .catch(err => {
-                console.log(err.message)
                 return res.status(500).json({error:1,message:err.message})
             });
     },
