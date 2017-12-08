@@ -13,19 +13,11 @@
 
         email: {
             type: String,
-            unique: true,
             required: [true, "L'email est requis"]
-        },
-
-        gender: {
-            type: String,
-            required: [true, "Le genre est requis"],
-            enum: ['male','female']
         },
 
         phone: {
             type: String,
-            unique: true,
             required: [true, 'Le numéro de téléphone est requis']
         },
 
@@ -48,30 +40,47 @@
             type: String
         },
 
-        jobTitle:{
+        job:{
             type: String
         },
 
-        experiences:[{
-            jobTitle:{type:String},
-            company:{type:String},
-            place:{type:String},
-            dateStart:{type:Date},
-            dateEnd:{type:Date},
-            Description:{type:Text},
-         }],
+        adress:{
+            type: String,
+            required: [true, 'L\'adresse est requise']
+        },
 
-        formations:[{
-            name:{type:String},
-            qualification:{type:String},
-            place:{type:String},
-            dateStart:{type:Date},
-            dateEnd:{type:Date},
-            Description:{type:Text},
+        experience:[{
+            jobTitle1:{type:String},
+            compagny1:{type:String},
+            place1:{type:String},
+            dateStart1:{type:Date},
+            dateEnd1:{type:Date},
+            description1:{type:String},
+            jobTitle2:{type:String},
+            compagny2:{type:String},
+            place2:{type:String},
+            dateStart2:{type:Date},
+            dateEnd2:{type:Date},
+            Description2:{type:String},
         }],
 
-        hobbies:{
-            type:Text
+        formation:[{
+            name1:{type:String},
+            qualification1:{type:String},
+            place1:{type:String},
+            dateStart1:{type:Date},
+            dateEnd1:{type:Date},
+            description1:{type:String},
+            name2:{type:String},
+            qualification2:{type:String},
+            place2:{type:String},
+            dateStart2:{type:Date},
+            dateEnd2:{type:Date},
+            Description2:{type:String},
+        }],
+
+        hobbie:{
+            type:String 
         },
 
     }, {collection: 'cv'});
